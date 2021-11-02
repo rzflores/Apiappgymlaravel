@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\VentasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('productos', 'ProductosController@index');
 Route::post('productos', 'ProductosController@store');
 Route::delete('productos/{id}', 'ProductosController@destroy');
 Route::put('productos/{id}', 'ProductosController@update');
+
+Route::post('ventas', 'VentasController@store');
